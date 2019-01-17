@@ -1,3 +1,5 @@
+require 'pry'
+
 def sort_array_asc(array)
   array.sort
 end
@@ -9,5 +11,29 @@ def sort_array_char_count(array)
 
 end
 def swap_elements(array)
+array[2], array[1] = array[1], array[2]
 array
+end
+def reverse_array(array)
+  array.reverse
+end
+def kesha_maker(array)
+new_array=[]
+  array.each do |element|
+  element[2]="$"
+end
+end
+
+def find_a(array)
+  array.select  do |element|
+    element[0]== "a"
+  end
+end
+
+def sum_array(array)
+  array.each do |element|
+    binding.pry
+str += element
+  end
+  str
 end
