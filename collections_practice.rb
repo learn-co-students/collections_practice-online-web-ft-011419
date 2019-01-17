@@ -31,9 +31,18 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.each do |element|
-    binding.pry
-str += element
+  sum=0
+  array.each { |element|
+  sum+=element}
+  sum
   end
-  str
+def add_s(array)
+array.collect do |element|
+    if array[1]== element
+  element
+
+    else
+      element + "s"
+    end
+  end
 end
